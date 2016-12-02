@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border: 1px solid #3F51B5;
+    border-radius: 20px;
+    text-indent: 20px;
+    font-size: 18px;
+    line-height: 2em;
+    width: 250px;
+    color: #3F51B5;
+    border-bottom: 2px solid #303F9F;
+    transition: box-shadow .1s linear;
+    will-change: box-shadow;
+    outline: none;
+}
+input:focus{
+    box-shadow: 0 2px 4px #888;
+}
