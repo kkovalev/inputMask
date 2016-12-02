@@ -1,4 +1,4 @@
-## InputMask
+# InputMask
 
 ```html
 <input
@@ -13,3 +13,6 @@ input.addEventListener('input', function(){
     this.prevValue = this.value;
 });
 ```
+
+## Demo
+https://seokirill.github.io/inputMask/
