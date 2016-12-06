@@ -4,13 +4,14 @@
 <input
     type="text"
     pattern="[0-9]{0,10}"
+    required
 />
 ```
 
 ```javascript
 input.addEventListener('input', function(){
-    if(this.matches(':invalid')) this.value = this.prevValue || '';
-    this.prevValue = this.value;
+    if(this.validity.patternMismatch) this.value = this.validValue || '';
+    this.validValue = this.value;
 });
 ```
 
